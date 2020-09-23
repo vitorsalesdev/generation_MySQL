@@ -1,10 +1,9 @@
-create database db_deletar;
+create database if not exists db_deletar;
 use db_deletar;
 
-create table consumidores (
-id int PRIMARY KEY AUTO_INCREMENT,
-nome varchar(30)
-
+CREATE TABLE IF NOT EXISTS consumidores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(30)
 );
 
 	insert into consumidores (nome) values
@@ -12,8 +11,16 @@ nome varchar(30)
     ("Julia");
     
     
-select * from consumidores;
+SELECT 
+    *
+FROM
+    consumidores;
 
-delete from consumidores where id = 1;
+DELETE FROM consumidores 
+WHERE
+    id = 1;
 
-select * from consumidores;
+SELECT 
+    *
+FROM
+    consumidores;
