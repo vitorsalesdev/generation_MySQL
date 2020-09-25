@@ -19,7 +19,7 @@ inteligencia int
 );
 
 insert into tb_classe(classe, descricao) values
-("Guerreiro", "O Guerreiro sabe usar todos os tipos de armaduras e escudos. Possui bons status em ataque e defesa"),
+("Guerreiro", "O Guerreiro pode usar todos os tipos de espadas, armaduras e escudos. Possui bons status em ataque e defesa"),
 ("Mago", "Magos são usuarios de poderosas magias arcanas. Possuí inteligencia muito elevada"),
 ("Ladino", "O ladino são especialistas em utilizar furtividade contra seus oponentes. Possui agilidade muito elevada"),
 ("Arqueiro", "O arqueiro é especialista em ataque à distância. Possui bons status em ataque e inteligencia");
@@ -31,7 +31,6 @@ insert into tb_personagem (nome, classe, ataque, defesa, agilidade, inteligencia
 ('Takumi', 'Arqueiro', 3500, 1000, 2000, 3500);
 
 select * from tb_personagem where ataque >= 2000;
-
 select * from tb_personagem where defesa >= 1000 and defesa <= 2000;
-
 select * from tb_personagem where nome like 'T%';
+select * from tb_classe;
