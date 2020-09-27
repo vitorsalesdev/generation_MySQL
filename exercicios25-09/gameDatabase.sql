@@ -43,4 +43,3 @@ select tb_personagem.id,tb_personagem.nome, tb_personagem.ataque, tb_personagem.
 tb_personagem.inteligencia, tb_classe.classe, tb_classe.descricao 
 from tb_personagem inner JOIN tb_classe 
 on tb_personagem.classe_id = tb_classe.id;
-select * from tb_personagem;
